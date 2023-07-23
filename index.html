@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+      }
+      h4 {
+        padding-top: 10px;
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h3 {
+        padding-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Magical places in Indonesia</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="action.html">Action</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item-hover" href="#">TENTANG BOROBUDUR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item-hover" href="#">TENTANG PULAU BALI</a>
+                </li>
+                <li>
+                  <a class="dropdown-item-hover" href="#">TENTANG LOMBOK</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <main>
+      <div
+        id="myCarousel"
+        class="calousel slide mb-6"
+        data-bs-ride="carousel"
+        data-bs-theme="light"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/lombok.jpg" class="w-100 h-25" alt="budaya" />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>INDONESIA terdiri beribu-ribu pulau</h1>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#"
+                    >Baca Selengkapnya</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/tari kecak.jpg" class="w-100 h-25" alt="agama" />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Beraneka ragam Budaya,Agama,Suku dan Ras</h1>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#"
+                    >Baca Selengkapnya</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/borobudur.jpg" class="w-100 h-25" alt="agama" />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Destinasi INDONESIA dari Sabang sampai Marauke</h1>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#"
+                    >Baca Selengkapnya</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>PULAU BALI</h4>
+
+              <p>
+                Pulau Bali adalah sebuah pulau yang terletak di provinsi Bali,
+                Indonesia. Secara geografis, pulau ini terletak di sebelah timur
+                pulau Jawa, di antara Lombok di sebelah barat dan Nusa Penida di
+                sebelah tenggara.
+              </p>
+              <p>
+                Bali terkenal sebagai tujuan wisata yang populer di dunia dengan
+                keindahan alamnya, budaya yang kaya, dan pantai-pantai yang
+                menakjubkan. Pulau ini memiliki beragam atraksi wisata, mulai
+                dari pantai-pantai yang indah seperti Kuta, Seminyak, dan Nusa
+                Dua, hingga situs pura dan kuil yang khas seperti Pura Tanah
+                Lot, Pura Besakih, dan Pura Uluwatu.
+              </p>
+              <p>
+                Selain itu, Bali juga terkenal dengan kehidupan malamnya yang
+                bersemangat, seni dan kerajinan tangan seperti ukiran kayu dan
+                batik, serta adat istiadat yang masih dijaga dengan baik oleh
+                penduduk setempat. Pulau ini menawarkan berbagai kegiatan
+                seperti selancar, menyelam, yoga, spa, dan berbagai jenis
+                olahraga air lainnya.
+              </p>
+              <p>
+                Bali dapat diakses melalui Bandara Internasional Ngurah Rai di
+                Denpasar, yang melayani penerbangan internasional dan domestik.
+                Jika Anda berencana mengunjungi Bali, pastikan untuk
+                merencanakan perjalanan Anda dengan baik dan menjelajahi semua
+                yang pulau ini tawarkan.
+              </p>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="assets/sate lilit.jpg" />
+                    <div class="card-body">
+                      <h><a href="">MAKANAN KHAS BALI</a></h>
+                      <p class="card-text">
+                        Hidangan ini sering ditemui di restoran-restoran Bali
+                        dan juga populer di kalangan wisatawan yang ingin
+                        mencoba makanan khas Bali yang autentik.
+                      </p>
+                      <div
+                        class="d-flex justify-content-end align-items-center"
+                      >
+                        <button type="button" class="btn btn-info">
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="assets/pantai bali.jpg" />
+                    <div class="card-body">
+                      <h><a href="">PANTAI DI BALI</a></h>
+                      <div class="card-text">
+                        <ul>
+                          <li>Pantai Kuta</li>
+                          <li>Seminyak</li>
+                          <li>Nusantara</li>
+                        </ul>
+                      </div>
+                      <div
+                        class="d-flex justify-content-end align-items-center"
+                      >
+                        <button type="button" class="btn btn-info">
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="assets/tari kecak.jpg" />
+                    <div class="card-body">
+                      <h><a href="">TARI KHAS BALI</a></h>
+                      <p class="card-text">
+                        Tari ini terkenal karena menggunakan vokal "cak" yang
+                        diucapkan oleh sekelompok penari pria yang duduk
+                        melingkar.
+                      </p>
+                      <div
+                        class="d-flex justify-content-end align-items-center"
+                      >
+                        <button type="button" class="btn btn-info">
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h3>Tentang</h3>
+              <img src="assets/bali.jpg" alt="Gambar Bali" class="img-fluid" />
+              <p>
+                Pulau Bali terletak di Indonesia, tepatnya di bagian selatan
+                Kepulauan Nusa Tenggara. Secara geografis, koordinat pulau Bali
+                adalah antara 8°25' LS - 8°50' LS dan 114°25' BT - 115°42' BT.
+                Bali terletak di sebelah barat Pulau Lombok dan dikelilingi oleh
+                Laut Bali di sebelah selatan, Laut Jawa di sebelah barat, serta
+                Selat Bali di sebelah timur.
+              </p>
+              <p>
+                Untuk memberikan gambaran lebih jelas, Bali terletak sekitar 3.2
+                kilometer (2 mil) di sebelah timur Pulau Jawa. Bali adalah salah
+                satu pulau yang paling terkenal di Indonesia dan menjadi tujuan
+                wisata yang populer baik bagi wisatawan domestik maupun
+                mancanegara.
+              </p>
+              <p>
+                Harap dicatat bahwa informasi ini berdasarkan pengetahuan hingga
+                tahun 2021 dan letak geografis mungkin tidak berubah secara
+                signifikan sejak saat itu.
+              </p>
+            </div>
+          </div>
+          <hr class="border-bold" />
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <h4>RAJA AMPAT</h4>
+
+                <p>
+                  Raja Ampat adalah sebuah kepulauan yang terletak di Provinsi
+                  Papua Barat, Indonesia. Secara geografis, Raja Ampat berada di
+                  bagian barat Pulau Papua, tepatnya di sebelah barat laut
+                  Sorong. Koordinatnya berkisar antara 0° 35' LU - 1° 45' LU dan
+                  130° 50' BT - 134° 20' BT.
+                </p>
+                <p>Raja Ampat terdiri dari empat pulau utama, yaitu:</p>
+                <ul>
+                  <li>Waigeo</li>
+                  <li>Salawati</li>
+                  <li>Batanta</li>
+                  <li>Misool</li>
+                </ul>
+                <p>
+                  Kepulauan ini terkenal dengan keindahan alam bawah lautnya
+                  yang sangat kaya akan keanekaragaman hayati, terumbu karang,
+                  dan biota laut yang menakjubkan. Raja Ampat menjadi surga bagi
+                  para penyelam dan pecinta alam.
+                </p>
+                <p>
+                  Untuk mencapai Raja Ampat, umumnya wisatawan terbang ke Kota
+                  Sorong terlebih dahulu, kemudian melanjutkan perjalanan dengan
+                  menggunakan kapal laut menuju pulau-pulau di Raja Ampat.
+                </p>
+                <p>
+                  Perlu dicatat bahwa informasi ini berdasarkan pengetahuan
+                  hingga tahun 2021, dan letak geografis mungkin tidak berubah
+                  secara signifikan sejak saat itu.
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Tentang</h3>
+                <img
+                  src="assets/raja-ampat.png"
+                  alt="Gambar Raja Ampat"
+                  class="img-fluid"
+                />
+                <p>
+                  Raja Ampat terletak di Provinsi Papua Barat, Indonesia. Secara
+                  geografis, kepulauan Raja Ampat terletak di sebelah barat laut
+                  Kota Sorong, dengan koordinat berkisar antara 0° 35' LU - 1°
+                  45' LU dan 130° 50' BT - 134° 20' BT. Kepulauan ini terdiri
+                  dari empat pulau utama, yaitu Waigeo, Salawati, Batanta, dan
+                  Misool, serta pulau-pulau kecil lainnya di sekitarnya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="border-bold" />
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <h4>CANDI BOROBUDUR</h4>
+                <p>
+                  Candi Borobudur adalah candi Buddha yang terletak di Magelang,
+                  Jawa Tengah, Indonesia. Candi ini merupakan salah satu
+                  keajaiban arsitektur dunia dan menjadi salah satu tujuan
+                  wisata yang populer di Indonesia.
+                </p>
+                <p>
+                  Candi Borobudur dibangun pada abad ke-8 oleh Dinasti
+                  Syailendra. Candi ini terdiri dari sembilan tingkat yang
+                  membentuk bentuk piramida, dengan total 504 arca Buddha dan
+                  2.672 panel relief yang menggambarkan ajaran Buddha dan
+                  kehidupan sehari-hari pada masa itu.
+                </p>
+                <p>
+                  Candi Borobudur dianggap sebagai pusat kebudayaan dan
+                  keagamaan pada masa kerajaan Mataram Kuno. Selain menjadi
+                  tempat peribadatan, candi ini juga memiliki nilai sejarah dan
+                  budaya yang tinggi.
+                </p>
+                <p>
+                  Candi Borobudur telah menjadi Situs Warisan Dunia UNESCO sejak
+                  tahun 1991. Setiap tahun, ribuan wisatawan dari seluruh dunia
+                  mengunjungi candi ini untuk mengagumi keindahannya dan
+                  merasakan atmosfer spiritual yang kental di sekitarnya.
+                </p>
+                <p>
+                  Jika Anda berencana mengunjungi Candi Borobudur, pastikan
+                  untuk mempersiapkan waktu yang cukup untuk menjelajahi setiap
+                  tingkat dan menikmati panorama indah dari puncak candi. Selain
+                  itu, jangan lupa mengenakan pakaian yang sopan dan menghormati
+                  aturan kunjungan yang berlaku.
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Tentang</h3>
+                <img
+                  src="assets/borobudur.jpg"
+                  alt="borobudur"
+                  class="img-fluid"
+                />
+                <p>
+                  Candi Borobudur memiliki 504 arca Buddha dan lebih dari 2.600
+                  panel relief yang menggambarkan cerita dan ajaran Buddha.
+                  Relief-relief ini menggambarkan berbagai adegan dari kehidupan
+                  Buddha, kisah-kisah jataka (kisah inkarnasi Buddha), serta
+                  kehidupan sehari-hari pada masa itu. Selain itu, candi ini
+                  juga memiliki stupa-stupa yang melambangkan kesucian dan
+                  mencapai nirwana.
+                </p>
+              </div>
+            </div>
+            <hr class="border-bold" />
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>LOMBOK</h4>
+
+                  <p>
+                    Pulau Lombok adalah sebuah pulau yang terletak di bagian
+                    timur Indonesia, lebih tepatnya di provinsi Nusa Tenggara
+                    Barat. Pulau ini berada di sebelah barat daya Pulau Bali dan
+                    merupakan bagian dari gugusan Kepulauan Sunda Kecil.
+                  </p>
+                  <p>
+                    Pulau Lombok terkenal dengan keindahan alamnya yang
+                    menakjubkan, termasuk pantai-pantai yang memukau,
+                    gunung-gunung yang menjulang, serta air terjun, hutan
+                    tropis, dan budaya yang kaya.
+                  </p>
+                  <ul>
+                    <li>Pantai Kuta Lombok</li>
+                    <li>Gili Trawangan, Gili Air, dan Gili Meno</li>
+                    <li>Gunung RinjanI</li>
+                    <li>Air Terjun Sendang Gile</li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">https://pantai_kuta_lombok</a></li>
+                    <li>
+                      <a href="#">https://gili_trawangan.gili_air.gili_meno</a>
+                    </li>
+                    <li><a href="#">https://gunung_rinjani</a></li>
+                    <li><a href="#">https://air_terjun_sendang_gile</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-4">
+                  <h3>Tentang</h3>
+                  <img src="assets/lombok.jpg" alt="lombok" class="img-fluid" />
+                  <p>
+                    Koordinat: Pulau Lombok terletak di antara 8° 18' 53" - 9°
+                    4' 24" Lintang Selatan dan 115° 25' 53" - 116° 30' 24" Bujur
+                    Timur.
+                  </p>
+                  <p>
+                    Letak: Pulau Lombok berada di sebelah timur Pulau Bali dan
+                    di sebelah barat Pulau Sumbawa. Secara keseluruhan, Pulau
+                    Lombok memiliki luas sekitar 4.725 kilometer persegi.
+                  </p>
+                  <p>
+                    Relief: Pulau Lombok memiliki relief yang beragam. Bagian
+                    barat pulau ini didominasi oleh pegunungan yang termasuk
+                    dalam rangkaian pegunungan Sunda Besar. Gunung Rinjani,
+                    dengan ketinggian 3.726 meter, merupakan gunung tertinggi di
+                    pulau ini. Di sebelah timur, terdapat dataran rendah yang
+                    lebih datar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2>Hubungi kontak yang ada dibawah ini :</h2>
+            <table class="table" aria-describedby="mydesc">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">No Hp</th>
+                  <th scope="col">E-mail</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Lala</td>
+                  <td>08xxxxxxx</td>
+                  <td>@lala123</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Lili</td>
+                  <td>08xxxxxxx</td>
+                  <td>@lili345</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lulu</td>
+                  <td>08xxxxxxx</td>
+                  <td>@lulu678</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="penulis">
+              @Ditulis oleh FATMA DAN WINDI Pada 3 JULI 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
